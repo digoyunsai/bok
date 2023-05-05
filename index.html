@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>NYW博克元帅不看美尔版</title>
+ <style>
+ *{
+   margin:0;
+   padding:0;
+   }
+ body{
+  overflow:hidden;
+   background-color:pink;}
+ h1{color:white;
+   text-align:center;
+   
+   font-size:12vw;
+   }
+ p{
+  
+   text-align:center;
+   color:blue;
+   }
+ .btn{
+ position:absolute;
+  top:350px;
+  left:15vw;
+   width:100px;
+   height:30px;
+   background-color:green;
+   text-align:center;
+   font-size:6vw;
+   border-radius:50px;
+   }
+ .ok{
+   left:60vw;
+   background-color:red;
+   }
+ .no{
+   background-color:green;
+   }
+ .no:hover{
+   background-color:yellow;
+   }
+ img{
+   display:block;
+   margin:0 auto;
+   width:150px;
+   height:150px;
+   border-radius:50vw;
+   margin-top:100px;
+   border: 2.5px solid white;
+   }
+ </style>
+  </head>
+  <body>	
+  <img src="764.jpg"/>
+  	<p>NYW博克元帅不看美尔版的提问</p>
+	<h1>做我对象好不好</h1>
+ <div class="btn ok">不好</div>
+ <div class="btn no" onclick="a()">好</div>
+
+ <script>
+ let ok = document.querySelector(".ok")
+ ok.addEventListener('touchstart',function(){
+     this.style.top = Math.floor(Math.random()*80)+"%"
+     this.style.left= Math.floor(Math.random()*80)+"%"
+     })
+ function a(){
+ window.location.href="1.html";
+ }
+
+   </script>
+  </body>
+</html>
